@@ -21,14 +21,13 @@ d3.csv(
     // All the settings of the chart are provided in this variable
     var option = {
       title: {
-        //ref https://echarts.apache.org/en/option.html#title
-        text: "World's Largest Urban Agglomerations 2020",
+        titletext: "Chart...",
         textStyle: {
           color: "blue",
           fontSize: 22,
           fontWeight: "bold"
         },
-        subtext: "Population data UN World Urbanization Prospects",
+        subtext: "Subtext",
         subtextStyle: {
           color: "coral",
           fontWeight: "bold"
