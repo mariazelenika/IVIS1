@@ -22,13 +22,13 @@ d3.csv(
     var option = {
       title: {
         //ref https://echarts.apache.org/en/option.html#title
-        text: "World's Largest Urban Agglomerations",
+        text: "World's Largest Urban Agglomerations 2020",
         textStyle: {
           color: "blue",
           fontSize: 22,
           fontWeight: "bold"
         },
-        subtext: "Subtext",
+        subtext: "Population data UN World Urbanization Prospects",
         subtextStyle: {
           color: "coral",
           fontWeight: "bold"
