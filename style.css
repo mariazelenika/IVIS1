@@ -29,6 +29,12 @@ body {
   	height: 400px;
   	margin: auto;
 }
+
+#main2 {
+  	width: 600px;
+  	height: 400px;
+  	margin: auto;
+}
 	
 a:link{color:blue;}
 a:visited{color:gray;}
