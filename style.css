@@ -17,6 +17,12 @@ body {
   	height: 600px;
   	margin: auto;
 }
+
+#main1 {
+  	width: 1000px;
+  	height: 600px;
+  	margin: auto;
+}
 	
 a:link{color:blue;}
 a:visited{color:gray;}
