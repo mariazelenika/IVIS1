@@ -52,15 +52,21 @@ option = {
       [75, 'Bempis2'],
     ]
   },
-  grid: { containLabel: true },
+  grid: { top: '9%',
+        left: '6%',
+        right: '5%',
+        bottom: '0%',
+        containLabel: true },
   tooltip: {
         trigger: 'axis',
         axisPointer: {           
-            type: 'none'        
+            type: 'line'        
         }
     },
   xAxis: { name: 'sum' },
-  yAxis: { name: 'alias', type: 'category' },
+  yAxis: { name: 'alias', type: 'category', axisLabel: {
+        interval: 0
+      }},
   series: [
     {
       name: 'sum',
@@ -77,7 +83,7 @@ option = {
         distance: 10,
         show: true
       },
-      //CategoryGap: '50%'
+      barCategoryGap: '40%'
     }
   ]
 };
