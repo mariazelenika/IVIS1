@@ -20,10 +20,10 @@ body {
 
 .flex-container > div {
   background-color: white;
-  width: 150px;
+  width: 50px;
   margin: 0px;
   text-align: center;
-  line-height: 75px;
+  line-height: normal;
   font-size: 30px;
 }
 
@@ -34,14 +34,14 @@ body {
 }
 
 #main1 {
-  	width: 570px;
-  	height: 650px;
+  	width: 580px;
+  	height: 630px;
   	margin: auto;
 }
 
 #main2 {
-  	width: 570px;
-  	height: 650px;
+  	width: 580px;
+  	height: 630px;
   	margin: auto;
 }
 	
