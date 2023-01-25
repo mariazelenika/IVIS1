@@ -21,6 +21,7 @@ d3.csv(
     // All the settings of the chart are provided in this variable
     var option = {
       title: {
+        //ref https://echarts.apache.org/en/option.html#title
         text: "Chart...",
         textStyle: {
           color: "blue",
