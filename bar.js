@@ -81,3 +81,6 @@ option = {
     }
   ]
 };
+
+// Display the chart using the configuration items and data just specified.
+myChart.setOption(option);
