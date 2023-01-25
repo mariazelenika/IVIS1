@@ -19,7 +19,7 @@ body {
 }
 
 .flex-container > div {
-  background-color: white;
+  background-color: pink;
   width: 10px;
   margin: 0px;
   text-align: center;
@@ -35,13 +35,13 @@ body {
 
 #main1 {
   	width: 640px;
-  	height: 630px;
+  	height: 610px;
   	margin: auto;
 }
 
 #main2 {
   	width: 640px;
-  	height: 630px;
+  	height: 610px;
   	margin: auto;
 }
 	
