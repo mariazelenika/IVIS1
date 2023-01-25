@@ -3,9 +3,7 @@ var myChart = echarts.init(document.getElementById('main1'));
 
 // Specify the configuration items and data for the chart
 option = {
-  title: {
-          text: 'Bar Chart of the sum score of Skills for Student'
-  },
+
   dataset: {
     source: [
       ['sum', 'alias'],
@@ -52,7 +50,7 @@ option = {
       [75, 'Bempis2'],
     ]
   },
-  grid: { top: '9%',
+  grid: { top: '5%',
         left: '6%',
         right: '5%',
         bottom: '0%',
