@@ -3,7 +3,6 @@ var myChart = echarts.init(document.getElementById('main1'));
 
 // Specify the configuration items and data for the chart
 option = {
-
   dataset: {
     source: [
       ['sum', 'alias'],
