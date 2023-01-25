@@ -9,10 +9,10 @@ p {
 	}
 	
 body {
-	background-color: #7B9FCF;
+	background-color: white;
 	}
 	
-a:link{color:white;}
-a:visited{color:blue;}
+a:link{color:blue;}
+a:visited{color:gray;}
 a:hover{color:red;}
 a:active{color:purple;}
