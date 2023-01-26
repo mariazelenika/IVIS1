@@ -15,7 +15,7 @@ body {
 .flex-container {
   display: flex;
   justify-content: center;
-  background-color: #f0f0f0;
+  background-color: white;
 }
 
 
@@ -27,13 +27,13 @@ body {
 }
 
 #main1 {
-  	width: 730px;
+  	width: 750px;
   	height: 640px;
   	margin: auto;
 }
 
 #main2 {
-  	width: 590px;
+  	width: 560px;
   	height: 640px;
   	margin: auto;
 }
