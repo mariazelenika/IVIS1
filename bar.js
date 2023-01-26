@@ -4,7 +4,12 @@ var myChart = echarts.init(document.getElementById('main1'));
 // Specify the configuration items and data for the chart
 option = {
   title: {
-          text: 'Bar Chart of the sum score of Skills for Student'
+          text: 'Bar Chart of the sum score of Skills for Student',
+          textStyle:{
+              fontSize: 10,
+              align: center
+          }
+          
   },
   dataset: {
     source: [
