@@ -4,11 +4,12 @@ var myChart = echarts.init(document.getElementById('main1'));
 // Specify the configuration items and data for the chart
 option = {
   title: {
+          text:{},
           rich:{
                 subtext: 'Bar Chart of the sum score of Skills for Student'
           },
           subtextStyle:{
-                 textAlign: 'center',
+                 textAlign: 'center'
           }          
   },
   dataset: {
