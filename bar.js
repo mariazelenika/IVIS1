@@ -6,10 +6,10 @@ option = {
   title: {
           text: 'Bar Chart of the sum score of Skills for Student',
           textStyle:{
-              fontsize: 5,
-              align: "center"
-          }
-          
+              fontsize: 5
+          },
+          textVerticalAlign: 'bottom',
+           textAlign: 'center'          
   },
   dataset: {
     source: [
