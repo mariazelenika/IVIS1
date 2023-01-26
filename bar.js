@@ -98,10 +98,13 @@ option = {
 myChart.setOption(option);
 
 
-
+var interests = {Soup: "Illustration, Video Games, 3D modelling/printing", 
+                 C3I2: 200, 
+                 Bempis2: "Music, Singing in a choir, Drawing, Video games"};
 // Here you can exec any function under handler,
 // OR
 // _
 myChart.on('click', 'series', (e) => {
     console.log(e.name)
+    console.log("key " + e.name + " has this interests: " + interests[e.name] + ".");
  });
