@@ -18,7 +18,14 @@ body {
   background-color: #f0f0f0;
 }
 
-
+.flex-container > div {
+  background-color: white;
+  width: 10px;
+  margin: 0px;
+  text-align: center;
+  line-height: normal;
+  font-size: 30px;
+}
 
 #main {
   	width: 1000px;
@@ -28,13 +35,13 @@ body {
 
 #main1 {
   	width: 690px;
-  	height: 620px;
+  	height: 640px;
   	margin: auto;
 }
 
 #main2 {
   	width: 610px;
-  	height: 620px;
+  	height: 640px;
   	margin: auto;
 }
 	
