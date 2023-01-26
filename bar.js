@@ -9,7 +9,6 @@ option = {
           },
           subtextStyle:{
                  textAlign: 'center',
-                 textVerticalAlign: 'bottom'
           }          
   },
   dataset: {
