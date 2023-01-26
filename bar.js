@@ -62,7 +62,8 @@ option = {
     },
   xAxis: { name: 'sum' },
   yAxis: { name: 'alias', type: 'category', axisLabel: {
-        interval: 0
+        interval: 0,
+        silent: false
       }},
   series: [
     {
