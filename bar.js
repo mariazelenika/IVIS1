@@ -8,7 +8,7 @@ option = {
         right: "center",
         top: "top",
         textStyle: {
-          fontSize: 10
+          fontSize: 12
         }
   },
   dataset: {
