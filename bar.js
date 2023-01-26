@@ -104,3 +104,10 @@ myChart.on('click', 'yAxis.category', function (params) {
     console.log(params.value);
   } 
 });
+
+// Here you can exec any function under handler,
+// OR
+// _
+myChart.on('click', 'series', (e) => {
+    console.log(e.name)
+ });
