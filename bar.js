@@ -87,3 +87,7 @@ option = {
 
 // Display the chart using the configuration items and data just specified.
 myChart.setOption(option);
+
+myChart.on('click', 'yAxis.category', (e) => {
+    console.log(e.name)
+    })
