@@ -6,7 +6,7 @@ option = {
   title: {
           text: 'Bar Chart of the sum score of Skills for Student',
           textStyle:{
-              fontSize: 10,
+
               align: center
           }
           
