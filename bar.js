@@ -5,8 +5,9 @@ var myChart = echarts.init(document.getElementById('main1'));
 option = {
   title: {
           text: 'Bar Chart of the sum score of Skills for Student',
-          textVerticalAlign: 'bottom',
-          textAlign: 'center'          
+          textStyle:{
+                fontSize: 5
+          }          
   },
   dataset: {
     source: [
