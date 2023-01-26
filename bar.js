@@ -106,6 +106,6 @@ var interests = {Soup: "Illustration, Video Games, 3D modelling/printing",
 // _
 myChart.on('click', 'series', (e) => {
     console.log(e.name)
-    console.log("key " + e.name + " has this interests: " + interests[e.name] + ".");
-    document.getElementById("demo").innerHTML = "Alias " + e.name + "'s interests are:\n" + interests[e.name] + ".";
+    console.log("Alias " + e.name + " has this interests: " + interests[e.name] + ".");
+    document.getElementById("main2").innerHTML = "Alias " + e.name + "'s interests are:" + "\n" + interests[e.name] + ".";
  });
