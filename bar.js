@@ -97,13 +97,7 @@ option = {
 // Display the chart using the configuration items and data just specified.
 myChart.setOption(option);
 
-myChart.on('click', 'yAxis.category', function (params) {
-  // Make sure event from target axis
-  if (params.componentType === 'yAxis' && params.yAxisIndex === 0) {
-    // params.value is the axis label before formatted
-    console.log(params.value);
-  } 
-});
+
 
 // Here you can exec any function under handler,
 // OR
