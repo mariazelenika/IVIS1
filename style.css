@@ -23,6 +23,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  align-items: flex-end;
 }
 
 .flex-container2 > div {
