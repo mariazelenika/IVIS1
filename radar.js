@@ -1,5 +1,5 @@
 // Initialize the echarts instance based on the prepared dom
-var myChart = echarts.init(document.getElementById('main3'));
+var Chart = echarts.init(document.getElementById('main3'));
 
 var values = [4, 4, 5, 7, 7, 4, 5, 5, 6, 8, 7, 5];
 
@@ -51,4 +51,4 @@ option = {
 };
 
 // Display the chart using the configuration items and data just specified.
-myChart.setOption(option);
+Chart.setOption(option);
