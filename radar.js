@@ -5,6 +5,7 @@ export function draw(v) {
     var values = v;
 
     var option = {
+      backgroundColor: '#161627',
       title: {
         //text: 'Basic Radar Chart'
       },
