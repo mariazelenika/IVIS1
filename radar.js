@@ -2,7 +2,7 @@ export function draw(v) {
     // Initialize the echarts instance based on the prepared dom
     var Chart = echarts.init(document.getElementById('main3'));
 
-    var values = v;
+    var values = v; 
 
     var option = {
       backgroundColor: '#161627',
