@@ -22,7 +22,8 @@ body {
 .flex-container2 {
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
+  direction: rtl;
+  justify-content: flex-end;
 }
 
 .flex-container2 > div {
@@ -51,7 +52,7 @@ body {
 
 #main2 {
   	width: 530px;
-  	height: 100px;
+  	height: 150px;
   	margin: auto;
 }
 
