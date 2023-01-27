@@ -4,7 +4,7 @@ import { draw } from "./radar.js";
 var myChart = echarts.init(document.getElementById('main1'));
 
 // Specify the configuration items and data for the chart
-option = {
+var option = {
   title: {
         text: "The Students' sum score of Skills",
         right: "center",
