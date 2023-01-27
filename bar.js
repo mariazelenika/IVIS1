@@ -145,9 +145,9 @@ var interests = {Soup: "Illustration, Video Games, 3D modelling/printing",
                  Bempis2: "Music, Singing in a choir, Drawing, Video games"};
 
 var scores = {Soup: [4, 4, 5, 7, 7, 4, 5, 5, 6, 8, 7, 5],
-                 vq: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-                 jjettas: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-                 SunnyStockholm: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+                 vq: [7,	9,	7,	10,	10,	7,	3,	5,	4,	6,	2,	5],
+                 jjettas: [6,	7,	5,	3,	10,	9,	5,	4,	7,	10,	8,	10],
+                 SunnyStockholm: [2,	3,	5,	3,	6,	5,	1,	2,	2,	8,	5,	3],
                  Yami: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
                  pringles: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
                  Oseram: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
