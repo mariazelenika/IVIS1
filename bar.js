@@ -1,5 +1,7 @@
 import { draw } from "./radar.js";
 
+draw([0]);
+
 // Initialize the echarts instance based on the prepared dom
 var myChart = echarts.init(document.getElementById('main1'));
 
