@@ -144,6 +144,48 @@ var interests = {Soup: "Illustration, Video Games, 3D modelling/printing",
                  C3I2: "Competetive wargamer", 
                  Bempis2: "Music, Singing in a choir, Drawing, Video games"};
 
+var scores = {Soup: [4, 4, 5, 7, 7, 4, 5, 5, 6, 8, 7, 5],
+                 vq: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+                 jjettas: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+                 SunnyStockholm: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+                 Yami: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+                 pringles: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+                 Oseram: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+                 Rizzlord: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+                 Koronesuki: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+                 Daybeha: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+                 Pasta: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+                 PogChamp: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+                 Ropianos: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+                 Horse123: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+                 Rebin: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+                 monoid: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+                 Ishi: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+                 xXVisWizXx: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+                 Aloy: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+                 Turb0clutcharen: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+                 kanelbullar13: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+                 Skvarre: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+                 Pål: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+                 Modi: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+                 Bluebell: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+                 Noggin_bops: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+                 Lumos: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+                 Santa86: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+                 mercury: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+                 DonkeyKong1: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+                 ardillito28: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+                 rabbit99: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+                 unpwu: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+                 PetrifiedDropbear69: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+                 ChaCharizard: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+                 HalfCrimp: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+                 coldfooter: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+                 Ramennoodle: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+                 Rufstufsan: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+                 C3I2: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 
+                 Bempis2: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]};
+
 // Here you can exec any function under handler,
 // OR
 // _
@@ -151,5 +193,5 @@ myChart.on('click', 'series', (e) => {
     console.log(e.name)
     console.log("Alias " + e.name + " has this interests: " + interests[e.name] + ".");
     document.getElementById("main2").innerHTML = e.name + "'s interests are: " + "<br />" + interests[e.name] + ".";
-    draw([4, 4, 5, 7, 7, 4, 5, 5, 6, 8, 7, 5]);
+    draw(scores[e.name]);
  });
