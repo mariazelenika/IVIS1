@@ -5,7 +5,7 @@ export function draw(v) {
     var values = v;
 
     var option = {
-      backgroundColor: '#161627',
+      //backgroundColor: '#161627',
       title: {
         //text: 'Basic Radar Chart'
       },
@@ -16,7 +16,7 @@ export function draw(v) {
         trigger: 'item'
       },
       legend: {
-        left: '30%', 
+        left: '25%', 
         data: ['Personal rating of the various skills']
       },
       radar: {
@@ -35,7 +35,7 @@ export function draw(v) {
           { name: 'Collaboration', max: 10 },
           { name: 'Repositories', max: 10 },
         ],
-        center: ['45%', '50%']
+        center: ['46%', '50%']
       },
       series: [
         {
