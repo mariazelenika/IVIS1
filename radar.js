@@ -38,8 +38,14 @@ option = {
         {
           value: values,
           name: 'Skills',
+          lineStyle: {
+            color: 'rgba(153, 51, 255)'
+          },
+          itemStyle: {
+            color: 'rgba(153, 51, 255)'
+          },
           areaStyle: {
-            color: 'rgba(84,112,198, 0.8)',
+            color: 'rgba(153, 51, 255, 0.7)'
           },
           label: {
             show: true
