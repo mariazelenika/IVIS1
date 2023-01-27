@@ -1,3 +1,5 @@
+import { draw } from "./radar.js";
+
 // Initialize the echarts instance based on the prepared dom
 var myChart = echarts.init(document.getElementById('main1'));
 
@@ -147,4 +149,5 @@ myChart.on('click', 'series', (e) => {
     console.log(e.name)
     console.log("Alias " + e.name + " has this interests: " + interests[e.name] + ".");
     document.getElementById("main2").innerHTML = e.name + "'s interests are: " + "<br />" + interests[e.name] + ".";
+    draw([4, 4, 5, 7, 7, 4, 5, 5, 6, 8, 7, 5]);
  });
