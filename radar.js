@@ -16,7 +16,7 @@ export function draw(v) {
         trigger: 'item'
       },
       legend: {
-        left: 225,
+        left: 150,
         data: ['Personal rating of the various skills']
       },
       radar: {
