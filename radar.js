@@ -22,7 +22,7 @@ export function draw(v) {
         // shape: 'circle',
         indicator: [
           { name: 'InfoViz', max: 10 },
-          { name: 'Stats', max: 10 },
+          { name: 'Statistics', max: 10 },
           { name: 'Math', max: 10 },
           { name: 'Art', max: 10 },
           { name: 'Computer', max: 10 },
@@ -32,7 +32,7 @@ export function draw(v) {
           { name: 'UX', max: 10 },
           { name: 'Communication', max: 10 },
           { name: 'Collaboration', max: 10 },
-          { name: 'Repository', max: 10 },
+          { name: 'Repositories', max: 10 },
         ]
       },
       series: [
