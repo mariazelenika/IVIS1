@@ -4,7 +4,7 @@ export function draw(v) {
 
     var values = v;
 
-    option = {
+    var option = {
       title: {
         //text: 'Basic Radar Chart'
       },
