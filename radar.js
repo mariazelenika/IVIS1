@@ -33,7 +33,8 @@ export function draw(v) {
           { name: 'Communication', max: 10 },
           { name: 'Collaboration', max: 10 },
           { name: 'Repositories', max: 10 },
-        ]
+        ],
+        center: ['40%', '50%']
       },
       series: [
         {
