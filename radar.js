@@ -1,5 +1,5 @@
 // Initialize the echarts instance based on the prepared dom
-var Chart = echarts.init(document.getElementById('main3'));
+var Chart = echarts.init(document.getElementById('main2'));
 
 var values = [4, 4, 5, 7, 7, 4, 5, 5, 6, 8, 7, 5];
 
