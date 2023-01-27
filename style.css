@@ -16,6 +16,7 @@ body {
   display: flex;
   justify-content: center;
   background-color: white;
+  align-items: flex-end;
 }
 
 .flex-container2 {
@@ -43,20 +44,21 @@ body {
 }
 
 #sp {
-  	width: 500px;
+  	width: 530px;
   	height: 40px;
   	margin: auto;
 }
 
 #main2 {
-  	width: 500px;
+  	width: 530px;
   	height: 100px;
   	margin: auto;
 }
 
 #main3 {
-  	width: 500px;
+  	width: 530px;
   	height: 450px;
+	margin: auto;
 }
 	
 a:link{color:blue;}
