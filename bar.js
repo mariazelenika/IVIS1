@@ -155,7 +155,7 @@ var scores = {Soup: [4, 4, 5, 7, 7, 4, 5, 5, 6, 8, 7, 5],
                  Koronesuki: [2,	2,	5,	4,	8,	5,	1,	3,	2,	5,	4,	5],
                  Daybeha: [6,	6,	5,	4,	7,	7,	6,	6,	1,	6,	5,	5],
                  Pasta: [6,	7,	8,	6,	9,	9,	6,	6,	7,	9,	10,	9],
-                 PogChamp: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+                 PogChamp: [6, 6, 7, 5, 9, 8, 1, 1, 1, 8, 7, 7],
                  Ropianos: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
                  Horse123: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
                  Rebin: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
@@ -192,6 +192,7 @@ var scores = {Soup: [4, 4, 5, 7, 7, 4, 5, 5, 6, 8, 7, 5],
 myChart.on('click', 'series', (e) => {
     console.log(e.name)
     console.log("Alias " + e.name + " has this interests: " + interests[e.name] + ".");
+    console.log(scores[e.name])
     document.getElementById("main2").innerHTML = e.name + "'s interests are: " + "<br />" + interests[e.name] + ".";
     draw(scores[e.name]);
  });
