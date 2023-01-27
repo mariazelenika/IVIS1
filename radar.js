@@ -7,6 +7,9 @@ option = {
   title: {
     //text: 'Basic Radar Chart'
   },
+  grid: {
+    containLabel: true
+  },
   tooltip: {
     trigger: 'item'
   },
