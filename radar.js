@@ -16,7 +16,7 @@ export function draw(v) {
         trigger: 'item'
       },
       legend: {
-        left: '23%', 
+        left: '22%', 
         data: ['Personal rating of the various skills']
       },
       radar: {
@@ -35,7 +35,7 @@ export function draw(v) {
           { name: 'Collaboration', max: 10 },
           { name: 'Repositories', max: 10 },
         ],
-        center: ['46%', '50%']
+        center: ['45%', '50%']
       },
       series: [
         {
