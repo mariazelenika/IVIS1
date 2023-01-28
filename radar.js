@@ -42,7 +42,8 @@ export function draw(v) {
           { name: 'Collaboration', max: 10 },
           { name: 'Repositories', max: 10 },
         ],
-        center: ['45%', '50%']
+        center: ['45%', '50%'],
+		radius: 150,
       },
       series: [
         {
@@ -58,7 +59,10 @@ export function draw(v) {
             },   
             {
               value: max,
-              name: 'Combined skills of the group'
+              name: 'Combined skills of the group',
+			  areaStyle: {
+                color: 'rgba(145,204,117, 0.8)',
+              },
             }
           ]
         }
