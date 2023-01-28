@@ -55,6 +55,7 @@ export function draw(v) {
               areaStyle: {
                 color: 'rgba(84,112,198, 0.8)',
               },
+            },   
             {
               value: max,
               name: 'Combined skills of the group'
