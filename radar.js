@@ -1,16 +1,7 @@
-export function draw(v) {   
+export function draw(values, max2, name) {   
     // Initialize the echarts instance based on the prepared dom
     var Chart = echarts.init(document.getElementById('main3'));
-    
-    
-    
-    var values = v;
-    var values2 = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
-    
-    var max = values.map(function (item, i) {
-      return Math.max(item, values2[i])
-    });
-
+	
     var option = {
       //backgroundColor: '#161627',
       title: {
@@ -23,8 +14,8 @@ export function draw(v) {
         trigger: 'item'
       },
       legend: {
-        left: '22%', 
-        data: ['Personal rating of the various skills', 'Combined skills of the group']
+        left: '5%', 
+        data: ['Combined skills of the group (taking the maximum rating of all scores)']
       },
       radar: {
         // shape: 'circle',
@@ -47,27 +38,39 @@ export function draw(v) {
       },
       series: [
         {
-          name: 'Personal rating of the various skills',
+          name: 'Personal rating of the various skills2',
           type: 'radar',
-          data: [
+          data: [   
             {
-              value: values,
-              name: 'Skills',
-              areaStyle: {
-                color: 'rgba(84,112,198, 0.8)',
-              },
-            },   
-            {
-              value: max,
-              name: 'Combined skills of the group',
+              value: max2,
+              name: 'Combined skills of the group (taking the maximum rating of all scores)',
 			  areaStyle: {
                 color: 'rgba(145,204,117, 0.8)',
               },
+			  itemStyle:{
+				  color: 'rgba(145,204,117)',
+			  }
             }
           ]
         }
       ]
     };
+	
+	if (name != null){
+		option.series[0].data.unshift({
+              value: values,
+              name: `${name}'s personal rating of the various skills`,
+              areaStyle: {
+                color: 'rgba(84,112,198, 0.8)',
+              },
+			  itemStyle:{
+				  color: 'rgba(84,112,198)',
+			  },
+            });
+		option.legend.data.unshift(
+			`${name}'s personal rating of the various skills`,
+		);
+	};
 
     // Display the chart using the configuration items and data just specified.
     Chart.setOption(option);
