@@ -5,18 +5,9 @@ draw([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]);
 // Initialize the echarts instance based on the prepared dom
 var myChart = echarts.init(document.getElementById('main1'));
 
-// Specify the configuration items and data for the chart
-var option = {
-  title: {
-        text: "The Students' sum score of Skills",
-        right: "center",
-        top: "top",
-        textStyle: {
-          fontSize: 12
-        }
-  },
-  dataset: {
-    source: [
+var selectednames = [];
+
+var database = [
       ['sum', 'alias'],
       [67, 'Soup'],
       [75, 'vq'],
@@ -59,7 +50,57 @@ var option = {
       [78, 'Rufstufsan'],
       [88, 'C3I2'],
       [75, 'Bempis2'],
-    ]
+    ];
+
+function add(n){
+	selectednames.push(n);
+}
+
+function remove(n){
+	selectednames = selectednames.filter(e => {
+		return n != e;
+	})
+}
+
+function selected(n){
+	return !!(selectednames.find(e => e == n)); //!!() makes it so that this returns true/false instead of undefined/true
+}
+
+function toggle(n){
+	if(selectednames.find(e => e == n)){
+		remove(n);
+	}
+	else{
+		add(n);
+	}
+	myChart.setOption({
+		yAxis: {
+			data:database.filter(e => {
+				return e[0] != 'sum';
+			}).map(e => {
+				if (selected(e[1])){
+					return {value: e[1], textStyle: {color: "purple"}};
+				}
+				else{
+					return e[1];
+				}
+			})
+		}
+	})
+}
+
+// Specify the configuration items and data for the chart
+var option = {
+  title: {
+        text: "The students' sum score of skills (points)",
+        right: "center",
+        top: "top",
+        textStyle: {
+          fontSize: 12
+        }
+  },
+  dataset: {
+    source: database 
   },
   grid: { top: '5%',
         left: '6%',
@@ -73,10 +114,12 @@ var option = {
         }
     },
   xAxis: { name: 'sum' },
-  yAxis: { name: 'alias', type: 'category', axisLabel: {
-        interval: 0,
-        silent: false
-      }},
+  yAxis: { name: 'alias', type: 'category', 
+			triggerEvent: true,
+			axisLabel: {
+				interval: 0,
+				silent: false
+		 }},
   series: [
     {
       name: 'sum',
@@ -189,10 +232,33 @@ var scores = {Soup: [4, 4, 5, 7, 7, 4, 5, 5, 6, 8, 7, 5],
 // Here you can exec any function under handler,
 // OR
 // _
+
+var lastselected;
+
 myChart.on('click', 'series', (e) => {
     console.log(e.name)
     console.log("Alias " + e.name + " has this interests: " + interests[e.name] + ".");
     console.log(scores[e.name])
-    document.getElementById("main2").innerHTML = e.name + "'s interests are: " + "<br />" + interests[e.name] + ".";
-    draw(scores[e.name]);
+    
+	toggle(e.name);
+	
+	if (selected(e.name)) {
+		lastselected = e.name;
+		document.getElementById("main2").innerHTML = e.name + "'s interests are: " + "<br />" + interests[e.name] + ".*";
+	}
+	
+	
+	
+	var groupSkills = selectednames.map(e => scores[e]);
+	
+	console.log(groupSkills);
+	
+	var max1 = groupSkills.reduce((prev, curr) => {    
+				return prev.map(function (item, i) {
+						return Math.max(item, curr[i]);
+				}); 
+			}, [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]);
+	
+	
+    draw(scores[lastselected], max1, lastselected);
  });
