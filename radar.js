@@ -60,9 +60,6 @@ export function draw(v) {
               value: max,
               name: 'Combined skills of the group'
             }
-              label: {
-                show: true
-              }
             }
           ]
         }
