@@ -5,6 +5,7 @@ draw([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]);
 // Initialize the echarts instance based on the prepared dom
 var myChart = echarts.init(document.getElementById('main1'));
 
+//array where the selected names are going to be saved
 var selectednames = [];
 
 var database = [
@@ -52,20 +53,24 @@ var database = [
       [75, 'Bempis2'],
     ];
 
+//function for adding the names selected in the array selectednames
 function add(n){
 	selectednames.push(n);
 }
 
+//function for removing the names selected in the array selectednames
 function remove(n){
 	selectednames = selectednames.filter(e => {
 		return n != e;
 	})
 }
 
+//function for checking if that names is/isn't selected by checking if it is present in the array selectednames
 function selected(n){
-	return !!(selectednames.find(e => e == n)); //!!() makes it so that this returns true/false instead of undefined/true
+	return !!(selectednames.find(e => e == n)); //!!() makes it so that this returns true/false (boolean value) instead of undefined/true
 }
 
+//function for switch on/off, add/remove and change the color of the names in the array selectednames
 function toggle(n){
 	if(selectednames.find(e => e == n)){
 		remove(n);
@@ -73,13 +78,14 @@ function toggle(n){
 	else{
 		add(n);
 	}
+	
 	myChart.setOption({
 		yAxis: {
 			data:database.filter(e => {
 				return e[0] != 'sum';
 			}).map(e => {
 				if (selected(e[1])){
-					return {value: e[1], textStyle: {color: "purple"}};
+					return {value: e[1], textStyle: {color: 'rgba(145,204,117)'}};
 				}
 				else{
 					return e[1];
@@ -229,12 +235,13 @@ var scores = {Soup: [4, 4, 5, 7, 7, 4, 5, 5, 6, 8, 7, 5],
                  C3I2: [8,	9,	8,	3,	9,	8,	5,	7,	7,	8,	7,	9], 
                  Bempis2: [3,	3,	3,	8,	8,	7,	7,	6,	8,	8,	7,	7]};
 
-// Here you can exec any function under handler,
-// OR
-// _
-
+//variable that will contain the last name that got selected
 var lastselected;
 
+//event handler that actives when you click on a bar and executes:
+//toggle()
+//changes the text in the div main2 to the interests of the name selected
+//draw() - draws the radar chart depending on the name and group selected
 myChart.on('click', 'series', (e) => {
     console.log(e.name)
     console.log("Alias " + e.name + " has this interests: " + interests[e.name] + ".");
@@ -248,11 +255,12 @@ myChart.on('click', 'series', (e) => {
 	}
 	
 	
-	
+	//array that contains the all the scores of the selected names
 	var groupSkills = selectednames.map(e => scores[e]);
 	
 	console.log(groupSkills);
 	
+	//variable that contains the array of the maximum ratings within the group selectednames
 	var max1 = groupSkills.reduce((prev, curr) => {    
 				return prev.map(function (item, i) {
 						return Math.max(item, curr[i]);
