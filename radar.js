@@ -1,8 +1,15 @@
-export function draw(v) {
+export function draw(v) {   
     // Initialize the echarts instance based on the prepared dom
     var Chart = echarts.init(document.getElementById('main3'));
-
+    
+    
+    
     var values = v;
+    var values2 = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
+    
+    var max = values.map(function (item, i) {
+      return Math.max(item, values2[i])
+    });
 
     var option = {
       //backgroundColor: '#161627',
@@ -17,7 +24,7 @@ export function draw(v) {
       },
       legend: {
         left: '22%', 
-        data: ['Personal rating of the various skills']
+        data: ['Personal rating of the various skills', 'Combined skills of the group']
       },
       radar: {
         // shape: 'circle',
@@ -48,6 +55,10 @@ export function draw(v) {
               areaStyle: {
                 color: 'rgba(84,112,198, 0.8)',
               },
+            {
+              value: max,
+              name: 'Combined skills of the group'
+            }
               label: {
                 show: true
               }
