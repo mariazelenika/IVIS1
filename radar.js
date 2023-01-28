@@ -44,12 +44,12 @@ export function draw(values, max2, name) {
             {
               value: max2,
               name: 'Combined skills of the group (taking the maximum rating of all scores)',
-			  areaStyle: {
+	      areaStyle: {
                 color: 'rgba(145,204,117, 0.8)',
               },
-			  itemStyle:{
-				  color: 'rgba(145,204,117)',
-			  }
+	      itemStyle:{
+		color: 'rgba(145,204,117)',
+	      }
             }
           ]
         }
@@ -58,15 +58,15 @@ export function draw(values, max2, name) {
 	
 	if (name != null){
 		option.series[0].data.unshift({
-              value: values,
-              name: `${name}'s personal rating of the various skills`,
-              areaStyle: {
-                color: 'rgba(84,112,198, 0.8)',
-              },
-			  itemStyle:{
-				  color: 'rgba(84,112,198)',
-			  },
-            });
+		      value: values,
+		      name: `${name}'s personal rating of the various skills`,
+		      areaStyle: {
+			color: 'rgba(84,112,198, 0.8)',
+		      },
+		      itemStyle:{
+			color: 'rgba(84,112,198)',
+		      },
+		    });
 		option.legend.data.unshift(
 			`${name}'s personal rating of the various skills`,
 		);
