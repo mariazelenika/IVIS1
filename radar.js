@@ -15,7 +15,7 @@ export function draw(values, max2, name) {
       },
       legend: {
         left: '5%', 
-        data: ['Combined skills of the group (taking the maximum rating of each skill among the selected people)']
+        data: ['Combined skills of the group**']
       },
       radar: {
         // shape: 'circle',
@@ -43,7 +43,7 @@ export function draw(values, max2, name) {
           data: [   
             {
               value: max2,
-              name: 'Combined skills of the group (taking the maximum rating of each skill among the selected people)',
+              name: 'Combined skills of the group**',
 	      areaStyle: {
                 color: 'rgba(145,204,117, 0.8)',
               },
