@@ -14,7 +14,7 @@ export function draw(values, max2, name) {
         trigger: 'item'
       },
       legend: {
-        left: '20%', 
+        left: '15%', 
         data: ['Combined skills of the group**']
       },
       radar: {
