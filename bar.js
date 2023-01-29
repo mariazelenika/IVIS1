@@ -3,7 +3,7 @@ import { draw } from "./radar.js";
 draw([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]);
 
 // Initialize the echarts instance based on the prepared dom
-var myChart = echarts.init(document.getElementById('main1'));
+var myChart = echarts.init(document.getElementById('main1'), null, {renderer: 'svg'});
 
 //array where the selected names are going to be saved
 var selectednames = [];
