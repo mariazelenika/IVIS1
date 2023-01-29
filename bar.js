@@ -1,4 +1,4 @@
-import { draw } from "./radar.js";
+import { draw } from "./radar.js"; 
 
 draw([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]);
 
