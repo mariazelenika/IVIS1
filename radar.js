@@ -1,6 +1,6 @@
 export function draw(values, max2, name) {   
     // Initialize the echarts instance based on the prepared dom
-    var Chart = echarts.init(document.getElementById('main3'));
+    var Chart = echarts.init(document.getElementById('main3'), null, {renderer: 'svg'});
 	
     var option = {
       //backgroundColor: '#161627',
