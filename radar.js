@@ -49,6 +49,9 @@ export function draw(values, max2, name) {
               },
 	      itemStyle:{
 		color: 'rgba(145,204,117)',
+	      },
+	      label: {
+		show: true,
 	      }
             }
           ]
