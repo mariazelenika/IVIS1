@@ -69,6 +69,9 @@ export function draw(values, max2, name) {
 		      itemStyle:{
 			color: 'rgba(84,112,198)',
 		      },
+		      label: {
+			show: true,
+		      }
 		    });
 		option.legend.data.unshift(
 			`${name}'s personal rating of the various skills`,
